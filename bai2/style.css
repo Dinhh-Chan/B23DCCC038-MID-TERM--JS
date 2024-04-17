@@ -1,0 +1,154 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#5e92e6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: none;
+}
+
+.navigations button,
+.bottom-container button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navigations button:hover,
+.bottom-container button:hover {
+    background-color: #0056b3;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.left-bar,
+.right-bar {
+    flex-basis: 20%;
+    margin-right: 70px;
+}
+
+.center-bar {
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  #9AC8CD;
+    border-radius: 10px;
+    border: 5px solid rgb(24, 65, 112) ;
+    margin-left: 70px;
+}
+
+.display {
+    width: 60%;
+    padding: 20px;
+    background-color: none ;
+    color: rgb(15, 14, 14);
+    font-size: 3em;
+    border-radius: 10px;
+}
+
+
+.item-weather {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #efefef;
+    border-radius: 5px;
+}
+
+.min input,
+.seconds input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    border-color: #0056b3;
+    
+}
+
+.bottom-container {
+    margin-top: 100px;
+    justify-content: space-between;
+    display: flex;
+}
+
+[data-theme-toggle] {
+    background-color: #ffcc00;
+}
+
+[data-theme-toggle]:hover {
+    background-color: #dbb300;
+}
+
+button:focus,
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+.bottom-container button {
+    width: 230px;
+    height: 150px;
+    gap: 30px;
+    background-color: #9AC8CD;
+    color: black;
+    border: 5px solid rgb(24, 65, 112) ;
+}
+
+.weather-info li {
+    margin-bottom: 5px;
+}
+
+.right-bar  div{
+    margin-bottom: 20px;
+}
+.right-bar .setting {
+    display: block;
+}
+.right-bar{
+    background-color:#9AC8CD;
+    border-radius: 10px;
+    border: 5px solid rgb(24, 65, 112) ;
+}
+.right-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sign {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.selection {
+    margin-top: 20px;
+}
+.setting button {
+    background-color: #1a774c;
+}
+.sign button {
+    background-color: #1a774c;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator App</title>
+<link rel="stylesheet" href="styless.css">
+</head>
+<body>
+<div class="calculator">
+    <input id="inputA" type="text" placeholder="Enter number A">
+    <input id="inputB" type="text" placeholder="Enter number B">
+    <button onclick="performCalculation('add')">SUM</button>
+    <button onclick="performCalculation('subtract')">SUBTRACT</button>
+    <button onclick="performCalculation('multiply')">MULTIPLY</button>
+    <button onclick="performCalculation('divide')">DIVIDE</button>
+    <button onclick="resetInputs()">RESET</button>
+    <div id="result"></div>
+</div>
+<script src="mainn.js"></script>
+</body>
+</html>
+    

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <script src="home.js"></script>
+    <div class="main-container">
+        <div class = "content">
+            <div class="center-bar">
+                <div class="display" id ="display">00:00</div>
+            </div>
+            <div class="right-bar">
+                <div class="min">
+                    <p>Minutes</p>
+                    <input id="minutes" type="number" placeholder="Minutes" min="0" value="0">
+                </div>
+                <div class="seconds">
+                    <p>Seconds</p>
+                    <input id="seconds" type="number" placeholder="Seconds" min="0" value="0">
+                </div>
+                <div class="setting">
+                    <button class = "start" onclick="startTimer()">START</button>
+                    <button class= "reset" onclick="resetTimer()">RESET</button>
+                    <button onclick="resetTimerALL()" class="reset-all">RESET TO 00:00</button>
+                </div>
+                <div class="sign">
+                    <button class="music" onclick="toggleAlarmSoundSelection()">Chọn nhạc chuông báo thức</button>
+                    
+                    <select id="alarm-sound-selector" style="display: none;" class="selection">
+                        <option value="sound1.mp3">Bao thuc quan doi</option>
+                        <option value="sound2.mp3">Day di ong chau oi</option>
+                        <option value="alarm3.mp3">Alarm Sound 3</option>
+                    </select>
+                </div>
+                
+            </div>
+            
+
+        </div>
+        <div class="bottom-container">
+            <button class="5-mins" onclick="setTime(5)">5 mins</button>
+            <button class="10-mins" onclick="setTime(10)">10 mins</button>
+            <button class="15-mins" onclick="setTime(15)">15 mins</button>
+            <button class="60-mins" onclick="setTime(60)">60 mins</button>
+            <button class="120-mins" onclick="setTime(120)">120 mins</button>
+        </div>
+        
+        
+    </div>
+
+</body>
+</html>   
